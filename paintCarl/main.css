@@ -1,0 +1,33 @@
+body {
+    padding: 0; 
+    margin: 0;
+}
+
+.panel {
+	border: 3px solid black;
+	margin: 5px 0px;
+	padding: 5px;
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+}
+
+.bouton {
+	margin: 5px 0px;
+	padding: 5px;
+}
+
+h3 {
+	margin: 1px;
+	text-decoration: underline;
+}
+
+h4 {
+	margin: 0;
+}
+
+#id {
+	width: 20px;
+}

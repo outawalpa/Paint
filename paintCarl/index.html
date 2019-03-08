@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arcade</title>
+	<link rel="stylesheet"type="text/css" href="main.css">
+	<script src="../lib/p5.min.js"></script>
+	<script src="../lib/addons/p5.dom.min.js"></script>
+	<script src="../lib/addons/p5.sound.min.js"></script>
+	
+</head>
+<body style="display: flex;">
+	<div id="canvas" style="border: 3px solid black; margin: 5px;"></div>
+	<div>
+		<div class="panel">
+			<h3>Color :</h3>
+			<div id="colorPanel" style="display: flex; flex-direction: row;  align-items: center;">
+				<div style="display: flex; flex-direction: column; align-items: flex-end;">
+					<div class="slider" id="red"><h4 style="color: red">Red :</h4></div>
+					<div class="slider" id="green"><h4 style="color: green">Green :</h4></div>
+					<div class="slider" id="blue"><h4 style="color: blue">Blue :</h4></div>
+				</div>
+				<div id="colorView" style="width: 100px; height: 50px;"></div>
+			</div>
+		</div>
+		<div class="panel">
+			<h3>Style :</h3>
+			<div id="stylePanel" style="display: flex; flex-direction: row;  align-items: center;">
+				<div class="slider" id="epaisseur"><h4>Epaisseur :</h4></div>
+				<div id="epaisseurView" style="border-radius: 50%"></div>
+			</div>
+		</div>
+		<div class="panel">
+			<h3>Formes :</h3>
+			<div id="formePanel">
+				<input type="checkbox" id="lign" name="forme" value="ligne" onclick="lignClear()">
+			    <label for="ligne">Ligne</label>
+
+			    <input type="checkbox" id="circle" name="forme" value="cerlce" onclick="circleClear()">
+			    <label for="cercle">Cerlce</label>
+
+			    <input type="checkbox" id="square" name="forme" value="carré" onclick="squareClear()">
+			    <label for="carré">Carré</label>
+
+			    <div id="outilsPanel">
+					<input type="checkbox" id="remplis" name="outils" value="remplis" onclick="fillVerif()">
+				    <label for="remplis">Remplissage</label>
+				</div>
+				<div id="colorPanel2" style="display: flex; flex-direction: row;  align-items: center;">
+					<div style="display: flex; flex-direction: column; align-items: flex-end;">
+						<div class="slider" id="red2"><h4 style="color: red">Red :</h4></div>
+						<div class="slider" id="green2"><h4 style="color: green">Green :</h4></div>
+						<div class="slider" id="blue2"><h4 style="color: blue">Blue :</h4></div>
+					</div>
+					<div id="colorView2" style="width: 100px; height: 50px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="panel">
+			<h3>Outils :</h3>
+			
+		</div>
+		<div class="bouton">
+			<button id="clear">Effacer</button>
+			<button id="undo">Annuler</button>
+			<button id="send">Envoyer</button>
+			<button id="load">Charger</button>
+			<input type="text" name="id" id="id">
+		</div>
+	</div>
+	<script src="sketch.js"></script>
+</body>
+</html>
