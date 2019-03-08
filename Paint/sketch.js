@@ -3,6 +3,7 @@ let canvas;
 let shapes = [];
 let currentShape;
 let jsonTextP;
+let author = "Delacour Carl"
 
 function setup() {
 	canvas = createCanvas(550, 550); //Taille du canvas
@@ -186,7 +187,7 @@ function draw() {
 		//Met les textes
 		let texts = shape.textCoord;
 		if(texts.length > 0) {
-			fill(c); //Rempli de la couleur du texte
+			fill(shape.red, shape.green, shape.blue); //Rempli de la couleur du texte
 			textFont('Georgia'); //Police d'écriture
 			textSize(shape.sizeText); //Taille du texte
 			strokeWeight(1); //Epaisseur des traits

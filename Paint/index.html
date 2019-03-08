@@ -61,8 +61,10 @@
 			<h3>Texte :</h3>
 			<input type="text" name="textZone" value="votre texte" id="textZone" style="width: 95%;">
 			<div id="textPanel"></div>
-			<input type="checkbox" id="textCheck" name="text" value="text" onclick="textClear()" style="display: block; margin: auto;">
-			<p id="textView"></p>
+			<div style="display: flex; flex-direction: row;">
+				<input type="checkbox" id="textCheck" name="text" value="text" onclick="textClear()" style="display: block; margin: auto;">
+				<p id="textView"></p>
+			</div>
 		</div>
 		<div class="bouton">
 			<button id="clear">Effacer</button>
@@ -70,6 +72,7 @@
 			<button id="send">Envoyer</button>
 			<button id="load">Charger</button>
 			<input type="text" name="id" id="id">
+			<span id="savingState"></span>
 		</div>
 	</div>
 	<script src="sketch.js"></script>
